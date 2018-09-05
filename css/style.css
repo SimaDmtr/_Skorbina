@@ -1,0 +1,888 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+fieldset {
+    border: none;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 0;
+    font-family: HelveticaNeueCyr;
+}
+
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+p{
+    letter-spacing: 0.05em;
+}
+li {
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+/*text styles*/
+.phone span {
+    font-weight: 300;
+}
+
+.linkUs a {
+    color: #ceb791;
+    font-weight: 300;
+}
+
+.navMenu a {
+    font-weight: 700;
+}
+
+.banner p {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.advSub {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.buttons{
+    margin-bottom: 18px;
+}
+.advantages .buttons a {
+    font-weight: 300;
+    color: #fffffe;
+}
+
+.items li {
+    font-weight: 700;
+}
+
+.itemsList h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contactNumbers span {
+    font-weight: 700;
+}
+
+.contactNumbers a {
+    font-weight: 700;
+}
+
+.contactNumbers .allDay {
+    font-weight: 300;
+}
+
+.place span {
+    font-weight: 300;
+}
+
+.place span:nth-child(1) {
+    font-weight: 700;
+}
+.contactsLeft{
+    width: 370px;
+    float: left;
+}
+
+.map{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+/*Header*/
+.topHeader {
+    min-height: 180px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    max-width: 460px;
+    margin-top: 30px;
+}
+.logo img{
+    width: 100%;
+    height: 100%
+}
+.phone {
+    width: 200px;
+    float: left;
+    margin: 52px 0 0 161px;
+}
+
+.topHeader button {
+    border: 1px solid #ceb791;
+    height: 45px;
+    width: 170px;
+    float: right;
+    margin-top: 68px;
+}
+
+.navMenuWrapper {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5be84+0,a17a4a+50,e5be84+100 */
+    background: #e5be84; /* Old browsers */
+    background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5be84', endColorstr='#e5be84', GradientType=1); /* IE6-9 */
+
+}
+
+.navMenu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.navMenu li {
+    float: left;
+    padding: 0 29px;
+    border: 1px solid transparent;
+    height: 48px;
+}
+
+.navMenu a {
+    line-height: 48px;
+}
+
+
+.navMenu li:hover {
+    border: 1px solid #ffffff;
+}
+
+/*Banner*/
+
+.bannerWrapper {
+    height: 558px;
+}
+
+.banner {
+    position: relative;
+    height: 558px;
+}
+
+.banner:before {
+    content: '';
+    display: block;
+    background: url(../img/jpeg/banner.jpg) center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.bannerContent {
+    padding-top: 150px;
+}
+
+.banner p + p {
+    margin-top: 30px;
+}
+
+.advantages {
+    background: #e5be84; /* Old browsers */
+    background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5be84', endColorstr='#e5be84', GradientType=1); /* IE6-9 */
+    min-height: 384px;
+}
+
+/* Advantages */
+.advLeft {
+    width: 57%;
+    float: left;
+}
+
+.advSub li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.advSub li:before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/png/liststyle.png);
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 5px;
+}
+
+.advSub li + li {
+    margin-top: 30px;
+}
+
+.advRight {
+    width: 43%;
+    float: left;
+}
+
+.advRight img {
+    width: 100%;
+    height: 100%;
+}
+
+.advWrapper {
+    padding-top: 38px;
+}
+
+.advLeft button {
+    width: 170px;
+    height: 45px;
+    margin-top: 25px;
+    border: 1px solid #ffffff;
+}
+
+.advLeft button + button {
+    margin-left: 30px;
+}
+
+.itemsList h2 {
+    margin: 0 auto;
+    width: 306px;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+/*  services   /  goods   */
+
+.servicesList .active{
+    color: #CEB791;
+}
+.goods {
+    height: 507px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5be84+0,a17a4a+50,e5be84+100 */
+    background: #e5be84; /* Old browsers */
+    background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5be84', endColorstr='#e5be84', GradientType=1); /* IE6-9 */
+}
+
+.services h2:after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    background-image: url(../img/png/underline.png);
+    width: 312px;
+    bottom: -20px;
+    left: calc(50% - 156px);
+}
+
+.goods h2:after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    background: url(../img/png/underline.png);
+    background-size: cover;
+    width: 370px;
+    bottom: -20px;
+    left: calc(50% - 185px);
+}
+
+.items {
+    margin-top: 40px;
+}
+
+.items ul:nth-child(1){
+    float: left;
+}
+
+.items ul:nth-child(2){
+    float: right;
+}
+.items ul:nth-child(3){
+    float: none;
+    width: 200px;
+    margin: 0 auto;
+}
+.items li {
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.items li + li {
+    margin-top: 20px;
+}
+
+.items div {
+    height: 80px;
+    width: 80px;
+    border: 2px solid #ceb791;
+    float: left;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.items span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.item1 {
+    background-image: url(../img/png/service1.png);
+}
+
+.item2 {
+    background-image: url(../img/png/service2png.png);
+}
+
+.item3 {
+    background-image: url(../img/png/service3.png);
+}
+
+.item4 {
+    background-image: url(../img/png/service4.png);
+}
+
+.item5 {
+    background-image: url(../img/png/service5.png);
+}
+
+.item6 {
+    background-image: url(../img/png/service6.png);
+}
+
+.item7 {
+    background-image: url(../img/png/service7.png);
+}
+
+.item8 {
+    background-image: url(../img/png/service8.png);
+}
+
+.item9 {
+    background-image: url(../img/png/service9.png);
+}
+
+.item10 {
+    background-image: url(../img/png/goods1.png);
+}
+
+.item11 {
+    background-image: url(../img/png/goods2.png);
+}
+
+.item12 {
+    background-image: url(../img/png/goods3.png);
+}
+
+.item13 {
+    background-image: url(../img/png/goods4.png);
+}
+
+.item14 {
+    background-image: url(../img/png/goods5.png);
+}
+
+.item15 {
+    background-image: url(../img/png/goods6.png);
+}
+
+.item16 {
+    background-image: url(../img/png/goods7.png);
+}
+
+.item17 {
+    background-image: url(../img/png/goods8.png);
+}
+
+.item18 {
+    background-image: url(../img/png/goods9.png);
+}
+
+.itemsList button {
+    width: 220px;
+    height: 45px;
+    display: block;
+    border: 1px solid #ffffff;
+    margin: 30px auto;
+}
+
+/* Contacts */
+.contacts {
+    height: 413px;
+    background-color: #181919;
+}
+
+.contactsLeft h2 {
+    position: relative;
+    padding-top: 30px;
+}
+
+.contactsLeft h2:after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    background-image: url(../img/png/underline.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 370px;
+    bottom: -20px;
+    left: 0;
+}
+
+.place, .contactNumbers {
+    width: 220px;
+}
+
+.contactNumbers {
+    margin-top: 60px;
+}
+
+.place {
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #242424;
+}
+
+.footerLogo {
+    width: calc(100% - 170px);
+    float: left;
+}
+
+.footerLogo img {
+    width: 200px;
+    margin: 15px 0 0 49%;
+    display: block;
+}
+
+.createdBy {
+    width: 170px;
+    height: 85px;
+    float: right;
+    background: #424242 url(../img/png/createdBy.png) no-repeat center;
+}
+
+/* SERVICES & GOODS  LINKS */
+.goodsUnderServices {
+    background: #2b2b2b;
+}
+
+.contentActive {
+    min-height: 558px;
+    background-color: #181919;
+}
+
+.contentActive li {
+    height: 37px;
+    line-height: 0px;
+    display: table;
+}
+
+.servicesList li + li {
+    margin-top: 10px;
+}
+
+.servicesList {
+
+    position: relative;
+    width: 270px;
+    float: left;
+}
+
+.servicesList div[class*=item] {
+    height: 36px;
+    width: 37px;
+    background-size: cover;
+    float: left;
+    border: 2px solid #ceb791;
+}
+
+.contentActive h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+
+.contentActive h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ceb791;
+
+}
+
+.contentActive span {
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 19px;
+    padding-left: 10px;
+}
+
+.servicesList:before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 412px;
+    background: url("../img/png/egdeline.png");
+    right: 0;
+}
+
+.contentActiveContentRight {
+    float: left;
+    max-width: calc(100% - 270px);
+    padding-left: 25px;
+}
+
+.contentActiveContent {
+    margin-top: 25px;
+}
+
+.contentActiveContent p {
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 27px;
+}
+
+.gallery {
+    float: right;
+    width: 472px;
+    height: 350px;
+}
+.galleryServ{
+    height: 290px;
+}
+.galleryServ,.galleryGoods {
+    margin-top: -28px;
+}
+.galleryNav{
+    margin-top: 6px;
+}
+.galleryNav div{
+    float: left;
+    height: 54px;
+    width: 88px;
+
+}
+.galleryNav div+div{
+    margin-left: 8px;
+}
+.galleryNav div  img{
+    height: 100%;
+    width: 100%;
+}
+
+/* SLIDER */
+.owl-carousel{
+    position: relative;
+}
+.owl-nav{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.owl-prev,.owl-next{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.owl-nav span{
+    display: none;
+}
+.owl-prev:after,.owl-next:after{
+    content: '';
+    height: 26px;
+    width: 14px;
+    position: absolute;
+
+}
+.owl-prev{
+    left: 7px;
+}
+.owl-next{
+    right: 21px;
+}
+.owl-prev:after{
+    background: url("../img/png/arrow.png");
+}
+.owl-next:after{
+    background: url("../img/png/arrow2.png");
+}
+
+
+/* ABOUT US */
+.about {
+    min-height: 753px;
+    background-color: #181919;
+}
+
+.about .contentActiveContentRight {
+    max-width: 100%;
+    float: none;
+}
+
+.about .contentLeft {
+    float: left;
+}
+
+.about .gallery {
+    margin: 0;
+}
+
+.about h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+
+/* Contacts */
+.contacts .container{
+    overflow: visible;
+}
+.contactsActive h2:after {
+    display: none;
+}
+
+.contactsActive .contactNumbers {
+    margin-top: 25px;
+}
+
+.contactsActive {
+    min-height: 753px;
+}
+.tabs-content li{
+    display:none;
+}
+.tabs-content .active{
+    display: block;
+}
+                                /*Articles*/
+
+.contentArticles{
+    background-color: #181919;
+}
+.artRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.articles h1{
+    padding-top: 28px;
+}
+.artItem{
+    flex:1 1 calc(33.33% - 30px);
+    min-width:370px;
+    margin: 30px 10px 10px 10px;
+}
+
+.artItem  img{
+    width: 100%;
+    height: 100%;
+}
+.artTitle{
+    height: 53px;
+    background: #e5be84; /* Old browsers */
+    background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5be84', endColorstr='#e5be84', GradientType=1); /* IE6-9 */
+}
+.articlesNav{
+    width: 140px;
+    text-align: center;
+    margin: 20px auto 0;
+    position: relative;
+    padding-bottom: 30px;
+    display: table;
+}
+.articlesNav .prev{
+    height: 26px;
+    width: 14px;
+    background-image: url(../img/png/arrow.png);
+}
+.articlesNav .next{
+    height: 26px;
+    width: 14px;
+    background-image: url(../img/png/arrow2.png);
+}
+
+.articlesNav li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.articlesNav a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.articlesNav li+li{
+    margin-left: 15px;
+}
+.artTitle h2{
+    font-size: 16px;
+    text-align: center;
+}
+.articlesNav li.active a{
+    font-size: 32px;
+    color: #ceb791;
+}
+.menuTrigger{
+    display: none;
+    text-align: center;
+    height: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5be84+0,a17a4a+50,e5be84+100 */
+    background: #e5be84; /* Old browsers */
+    background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5be84', endColorstr='#e5be84', GradientType=1); /* IE6-9 */
+
+}
+/* ARTICLES MORE */
+.articlesMore{
+    min-height: 768px;
+    background-color: #000000;
+}
+.back {
+    text-transform: uppercase;
+    padding: 25px 0 0  15px;
+    position: relative;
+}
+.back:before{
+    position: absolute;
+    content: '';
+    background: url("../img/png/arrow.png");
+    width: 6px;
+    height: 12px;
+    background-size: cover;
+    left: 0;
+    top: calc(50% + 7px);
+}
+.articleWrapper h1{
+    font-size: 20px;
+    color: #ceb791;
+    margin-top: 25px;
+}
+.articleWrapper p{
+    margin-top: 25px;
+    line-height: 24px;
+}
+.articleWrapper p img{
+    width: 470px;
+    height: 290px;
+    float: right;
+    margin-top: -47px;
+}
+@media screen and (max-width: 479px){
+    .navMenuWrapper{
+        display: none;
+    }
+    .phone{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .topHeader button{
+        width: 100%;
+        margin: 30px auto;
+        clear: both;
+    }
+    .navMenu{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menuTrigger{
+        display: block;
+    }
+    .advRight{
+        display: none;
+    }
+}
