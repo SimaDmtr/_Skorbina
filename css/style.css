@@ -42,6 +42,7 @@ button {
     outline: none;
     border: 0;
     background: transparent;
+    padding: 0;
 }
 
 ul {
@@ -106,7 +107,7 @@ li {
 
 .advSub {
     font-weight: 700;
-    font-size: 16px;
+
     text-transform: uppercase;
 }
 .buttons{
@@ -155,7 +156,7 @@ li {
     font-weight: 700;
 }
 .contactsLeft{
-    width: 370px;
+    max-width: 370px;
     float: left;
 }
 
@@ -209,7 +210,6 @@ li {
     justify-content: center;
     min-height: 60px;
     align-items: center;
-    width: 70%;
     flex-wrap: wrap;
 }
 
@@ -333,8 +333,11 @@ li {
 .servicesList .active{
     color: #CEB791;
 }
+.itemsList{
+    min-height: 507px;
+}
 .goods {
-    height: 507px;
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5be84+0,a17a4a+50,e5be84+100 */
     background: #e5be84; /* Old browsers */
     background: -moz-linear-gradient(left, #e5be84 0%, #a17a4a 50%, #e5be84 100%); /* FF3.6-15 */
@@ -365,7 +368,7 @@ li {
 }
 
 .items {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .items ul:nth-child(1){
@@ -483,7 +486,8 @@ li {
     height: 45px;
     display: block;
     border: 1px solid #ffffff;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
+
 }
 
 /* Contacts */
@@ -861,6 +865,9 @@ footer {
     margin-top: -47px;
 }
 @media screen and (max-width: 479px){
+    .container{
+        margin: 0 15px;
+    }
     .navMenuWrapper{
         display: none;
     }
@@ -871,18 +878,102 @@ footer {
     }
     .topHeader button{
         width: 100%;
-        margin: 30px auto;
+        margin: 15px auto;
         clear: both;
     }
     .navMenu{
         flex-direction: column;
         height: auto;
+        border: 1px solid #ceb791;
+        border-top: none;
+    }
+    .logo{
+        margin: 30px auto 0 auto;
+        float: none;
     }
 
     .menuTrigger{
         display: block;
+        background: #1e1e1e;
+
+        color: #ceb791;
+    }
+    .triggerWrapper{
+        border : 1px solid #ceb791;
+    }
+    .navMenuWrapper {
+        border-bottom: 1px solid #1f1615;
+        background: #1e1e1e;
+
+    }
+    .navMenu a{
+        color: #CEB791;
     }
     .advRight{
         display: none;
     }
+    .bannerWrapper  {
+        display: none!important;
+    }
+    .advRight{
+        display: none;
+    }
+    .advLeft{
+        width: 100%;
+    }
+    .advLeft button {
+        width: 150px;
+    }
+    .advLeft button+button {
+        margin: 0;
+    }
+    li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .advSub li + li {
+        margin-top: 15px;
+    }
+    .itemsList .items ul {
+        width: 280px;
+        float: none;
+        margin: 0 auto;
+    }
+    .itemsList .items ul+ul{
+        margin-top: 20px;
+    }
+    .map{
+        width:100%;
+    }
+    .advantages{
+        min-height: auto;
+    }
+    .footerLogo img{
+        margin: 15px auto;
+    }
+    .services h2:after{
+        width: 312px;
+        left: calc(50% - 161px);
+        background-size: cover;
+
+    }
+    .goods h2:after{
+        width: 312px;
+        left: calc(50% - 161px);
+        background-size: cover;
+
+    }
+    .contacts h2:after{
+        width: 312px;
+        left: calc(50% - 195px);
+        background-size: contain;
+
+    }
+
+}
+@media screen and (max-width: 991px){
+    .navMenu li{
+        padding: 0 14px;
+    }
+
 }
