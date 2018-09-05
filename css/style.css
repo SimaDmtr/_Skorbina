@@ -760,8 +760,11 @@ footer {
 }
 .artItem{
     flex:1 1 calc(33.33% - 30px);
-    min-width:370px;
+    min-width:270px;
     margin: 30px 10px 10px 10px;
+    max-width: 370px;
+    max-height: 280px;
+    overflow: hidden;
 }
 
 .artItem  img{
@@ -811,10 +814,7 @@ footer {
     font-size: 16px;
     text-align: center;
 }
-.articlesNav li.active a{
-    font-size: 32px;
-    color: #ceb791;
-}
+
 .menuTrigger{
     display: none;
     text-align: center;
@@ -934,6 +934,9 @@ footer {
     .advSub li + li {
         margin-top: 15px;
     }
+    .itemsList{
+        padding-bottom: 20px;
+    }
     .itemsList .items ul {
         width: 280px;
         float: none;
@@ -950,6 +953,7 @@ footer {
     }
     .footerLogo img{
         margin: 15px auto;
+        width: 100%;
     }
     .services h2:after{
         width: 312px;
@@ -969,7 +973,21 @@ footer {
         background-size: contain;
 
     }
-
+    .footerLogo{
+        width: 50%;
+    }
+    .createdBy{
+        width: 50%;
+    }
+    .artItem {
+        width: 100%;
+        margin: 0 0 0 0;
+        max-width: none;
+        max-height: none;
+    }
+    header{
+        padding-bottom: 20px;
+    }
 }
 @media screen and (max-width: 991px){
     .navMenu li{
