@@ -94,10 +94,7 @@ li {
     color: #ceb791;
     font-weight: 300;
 }
-.linkUs a {
-    color: #ceb791;
-    font-weight: 300;
-}
+
 .linkUs {
     border: 2px solid #fef2f3;
     text-align: center;
@@ -181,7 +178,7 @@ li {
 }
 
 .contactNumbers a {
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .contactNumbers .allDay {
@@ -588,11 +585,13 @@ li {
 /* Footer */
 footer {
     background-color: #242424;
+    max-height: 85px;
 }
 
 .footerLogo {
     width: calc(100% - 170px);
     float: left;
+
 }
 
 .footerLogo img {
@@ -829,7 +828,7 @@ footer {
 .artItem{
     flex:1 1 calc(33.33% - 30px);
     min-width:270px;
-    margin: 30px 10px 10px 10px;
+    margin: 30px 12px 15px 12px;
     max-width: 370px;
     max-height: 280px;
     overflow: hidden;
@@ -960,7 +959,7 @@ footer {
         border-top: none;
     }
     .logo{
-        margin: 30px auto 0 auto;
+        margin: 15px auto 0 auto;
         float: none;
     }
 
@@ -1024,8 +1023,9 @@ footer {
         min-height: auto;
     }
     .footerLogo img{
-        margin: 15px auto;
+        margin: 0 auto;
         width: 70%;
+
     }
     .services h2:after{
         width: 312px;
@@ -1040,13 +1040,14 @@ footer {
 
     }
     .contacts h2:after{
-        width: 312px;
-        left: calc(50% - 195px);
+        width: 306px;
+        left: calc(50% - 150px);
         background-size: contain;
 
     }
     .footerLogo{
         width: 50%;
+        padding-top: 10px;
     }
     .createdBy{
         width: 50%;
@@ -1086,8 +1087,16 @@ footer {
     .contactsActive .map{
         width: 100%;
     }
+
 }
 @media screen and (max-width: 991px){
+    .container{
+        max-width: 991px;
+        margin: 0 15px;
+    }
+    .topHeader{
+        min-height: 150px;
+    }
     .navMenu li{
         padding: 0 14px;
     }
@@ -1098,7 +1107,11 @@ footer {
         float: left;
     }
     .galleryServ, .galleryGoods {
-        margin-top: 0;
+        margin: 20px auto 10px ;
+        float: none;
+    }
+    .logo{
+        max-width: 353px;
     }
 
 }
