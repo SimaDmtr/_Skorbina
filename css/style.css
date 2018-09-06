@@ -165,6 +165,12 @@ li {
     width: 50%;
     float: right;
 }
+.contactsActive .map{
+    height: 490px;
+    width: 75%;
+    margin: 80px auto 0 auto;
+    float: left;
+}
 /*Header*/
 .topHeader {
     min-height: 180px;
@@ -705,8 +711,9 @@ footer {
 }
 
 .about .contentActiveContentRight {
-    max-width: 100%;
-    float: none;
+
+    float: left
+;
 }
 
 .about .contentLeft {
@@ -738,7 +745,7 @@ footer {
 }
 
 .contactsActive {
-    min-height: 753px;
+    min-height: 879px;
 }
 .tabs-content li{
     display:none;
@@ -750,6 +757,9 @@ footer {
 
 .contentArticles{
     background-color: #181919;
+}
+.artImage{
+    height: calc(100% - 53px);
 }
 .artRow {
     display: flex;
@@ -864,9 +874,10 @@ footer {
     float: right;
     margin-top: -47px;
 }
-@media screen and (max-width: 479px){
+@media screen and (max-width: 767px){
     .container{
         margin: 0 15px;
+
     }
     .navMenuWrapper{
         display: none;
@@ -953,7 +964,7 @@ footer {
     }
     .footerLogo img{
         margin: 15px auto;
-        width: 100%;
+        width: 70%;
     }
     .services h2:after{
         width: 312px;
@@ -981,12 +992,38 @@ footer {
     }
     .artItem {
         width: 100%;
-        margin: 0 0 0 0;
+        margin: 15px 5px 0 5px;
         max-width: none;
         max-height: none;
     }
     header{
         padding-bottom: 20px;
+    }
+    .contentActiveContentRight {
+        float: left;
+        max-width: none;
+        padding-left: 0;}
+    .galleryServ{
+        display: none;
+    }
+    .contentActive{
+        padding-bottom: 20px;
+    }
+    .galleryGoods{
+        display: none;}
+    .tab-content{
+        margin-top: 20px;
+    }
+    .about .gallery{
+        display: none;
+    }
+    .articleWrapper p img {
+        margin: 0 0 20px 20px;
+        height: 45%;
+        width: 45%;
+    }
+    .contactsActive .map{
+        width: 100%;
     }
 }
 @media screen and (max-width: 991px){
