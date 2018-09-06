@@ -221,6 +221,15 @@ li {
     float: left;
     max-width: 460px;
     margin-top: 30px;
+    position: relative;
+}
+.logo h1{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 44%;
+    bottom: 14%;
+    white-space: nowrap;
 }
 .logo img{
     width: 100%;
@@ -229,7 +238,10 @@ li {
 .phone {
     width: 200px;
     float: left;
-    margin: 52px 0 0 161px;
+    margin: 52px 0 0 151px;
+    border-left: 3px solid #ceb791;
+    padding-left: 10px;
+;
 }
 
 .topHeader button {
@@ -442,7 +454,7 @@ li {
 
 .items div {
     height: 80px;
-    width: 80px;
+    min-width: 80px;
     border: 2px solid #ceb791;
     float: left;
     background-position: top center;
@@ -533,9 +545,11 @@ li {
     display: block;
     border: 1px solid #ffffff;
     margin: 30px auto 0 auto;
-
+    color: #ffffff
 }
-
+.itemsList button a{
+    color: #ffffff;
+}
 /* Contacts */
 .contacts {
     height: 413px;
@@ -930,7 +944,7 @@ footer {
         display: none;
     }
     .phone{
-        margin: 0;
+        margin: 0!important;
         width: 100%;
         text-align: center;
     }
@@ -1076,6 +1090,15 @@ footer {
 @media screen and (max-width: 991px){
     .navMenu li{
         padding: 0 14px;
+    }
+    .phone{
+        margin: 52px 0 0 30px
+    }
+    .contentActiveContent p{
+        float: left;
+    }
+    .galleryServ, .galleryGoods {
+        margin-top: 0;
     }
 
 }
