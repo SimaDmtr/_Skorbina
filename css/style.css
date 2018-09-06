@@ -94,7 +94,47 @@ li {
     color: #ceb791;
     font-weight: 300;
 }
+.linkUs a {
+    color: #ceb791;
+    font-weight: 300;
+}
+.linkUs {
+    border: 2px solid #fef2f3;
+    text-align: center;
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+.linkUs:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 251);
+    opacity: 0.1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+.linkUs:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 .navMenu a {
     font-weight: 700;
 }
@@ -758,6 +798,10 @@ footer {
 .contentArticles{
     background-color: #181919;
 }
+.artImage:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
 .artImage{
     height: calc(100% - 53px);
 }
@@ -776,7 +820,10 @@ footer {
     max-height: 280px;
     overflow: hidden;
 }
-
+.active a{
+    font-size: 32px!important;
+    color: #ceb791!important;
+}
 .artItem  img{
     width: 100%;
     height: 100%;
