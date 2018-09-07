@@ -287,7 +287,7 @@ li {
 /*Banner*/
 
 .bannerWrapper {
-    height: 558px;
+    max-height: 558px;
 }
 
 .banner {
@@ -983,9 +983,7 @@ footer {
     .advRight{
         display: none;
     }
-    .bannerWrapper  {
-        display: none!important;
-    }
+
     .advRight{
         display: none;
     }
@@ -997,6 +995,9 @@ footer {
     }
     .advLeft button+button {
         margin: 0;
+    }
+    .banner{
+        height: 300px;
     }
     li{
         font-size: 14px;
@@ -1013,6 +1014,26 @@ footer {
         float: none;
         margin: 0 auto;
     }
+    .bannerContent{
+        padding-top: 30px ;
+    }
+    .bannerContent p{
+        font-size:16px;
+    }
+    .servicesList{
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .servicesList li{
+       width: 210px;
+        display: block;
+        align-self: center;
+        margin-top:13px;
+    }
+
     .itemsList .items ul+ul{
         margin-top: 20px;
     }
@@ -1077,8 +1098,9 @@ footer {
         margin-top: 20px;
     }
     .about .gallery{
-        display: none;
+        margin-top: 20px;
     }
+
     .articleWrapper p img {
         margin: 0 0 20px 20px;
         height: 45%;
