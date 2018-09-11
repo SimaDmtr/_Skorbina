@@ -1137,7 +1137,7 @@ footer {
     }
 
 }
-@media screen and (max-width: 585px){
+@media screen and (max-width: 485px){
     .banner p + p {
     margin-top: 10px;
     }
