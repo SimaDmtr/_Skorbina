@@ -1137,3 +1137,8 @@ footer {
     }
 
 }
+@media screen and (max-width: 585px){
+    .banner p + p {
+    margin-top: 10px;
+    }
+}
